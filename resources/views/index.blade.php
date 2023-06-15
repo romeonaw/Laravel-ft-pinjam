@@ -6,9 +6,9 @@
       <div class="container">
         <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start" data-scrollax-parent="true">
           <div class="col-md-7 ftco-animate">
-          	<h2 class="subheading">Selamat datang di FTPinjam</h2>
+          	<h2 class="subheading">Selamat datang di FT Pinjam</h2>
           	<h1 class="mb-4">Pinjam ruangan mudah dan cepat</h1>
-            <p><a href="http://ft.unsoed.ac.id/" class="btn btn-primary">Pelajari lebih lanjut</a> <a href="mailto:ft@unsoed.ac.id" class="btn btn-white">Hubungi kami</a></p>
+            <p><a href="http://ft.unsoed.ac.id/" class="btn btn-success">Pelajari lebih lanjut</a> <a href="mailto:ft@unsoed.ac.id" class="btn btn-white">Hubungi kami</a></p>
           </div>
         </div>
       </div>
@@ -128,7 +128,7 @@
 								</div>
 								<div class="col-md-12">
 									<div class="form-group">
-			              <input type="submit" value="Pinjam Ruang Sekarang" class="btn btn-primary py-3 px-4">
+			              <input type="submit" value="Pinjam Ruang Sekarang" class="btn btn-success py-3 px-4">
 			            </div>
 								</div>
 							</div>
@@ -148,7 +148,7 @@
           <div class="row ftco-animate">
             <div class="col-md-12 wrap-about">
                 <div class="text-center">
-                    <img src="{{ asset('vendor/vonso/AlurPeminjaman.jpg') }}" class="img-fluid" alt="...">
+                    <img src="{{ asset('vendor/vonso/FlowchartV1.png') }}" class="img-fluid" alt="...">
                   </div>
                </div>
           </div>
@@ -163,60 +163,6 @@
             <p class="justify-content-center"><a href="{{ route('rooms') }}">Lihat lebih banyak ruangan disini.</a></p>
           </div>
         </div>
-				<div class="row no-gutters">
-                @for ($i = 0; $i < 4; $i++)
-                @php
-                    // Get Random rooms
-                    $room = $data['rooms'][rand(0, $data['rooms']->count() -1)];
-
-                    $room_status = $room->status;
-                    $borrower_status = [];
-
-                    // Check if any borrow rooms
-                    if ($room->borrow_rooms->isNotEmpty()) {
-                        // Check each borrow_rooms
-                        foreach ($room->borrow_rooms as $key => $borrow_room) {
-                            // Show details if not finished yet by checking status first
-                            if (
-                                $borrow_room->returned_at == null
-                                && $borrow_room->admin_approval_status == App\Enums\ApprovalStatus::Disetujui
-                            ) {
-                                $room_status = 1; // Set status room to Booked
-                                $borrower_first_name = ucfirst(strtolower(explode(' ', Encore\Admin\Auth\Database\Administrator::find($borrow_room->borrower_id)->name)[0]));
-
-                                $borrow_at = Carbon\Carbon::parse($borrow_room->borrow_at);
-                                $until_at = Carbon\Carbon::parse($borrow_room->until_at);
-                                $count_days = $borrow_at->diffInDays($until_at) + 1;
-
-                                if ($count_days == 1)
-                                    $borrower_status[] = $borrower_first_name . ' - ' . $borrow_at->format('d M Y');
-                                else
-                                    $borrower_status[] = $borrower_first_name . ' - ' . $borrow_at->format('d M Y') . ' s.d ' . $until_at->format('d M Y');
-                            }
-                        }
-                    }
-                @endphp
-                <div class="col-lg-6">
-                    <div class="room-wrap d-md-flex">
-                        <a href="#" class="img" style="background-image: url({{ asset('vendor/technext/vacation-rental/images/room-'. rand(1, 15) . '.jpg') }});"></a>
-                        <div class="half left-arrow d-flex align-items-center">
-                            <div class="text p-4 p-xl-5 text-center">
-                                <p class="star mb-0"><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span><span class="fa fa-star"></span></p>
-                                <p class="mb-0">{{ $room->room_type->name }}</p>
-                                <h3 class="mb-3"><a href="javascript:void(0)">{{ $room->name }}</a></h3>
-                                <ul class="list-accomodation">
-                                    <li><span>Maks:</span> {{ $room->max_people }} Orang</li>
-                                    <li><span>Status:</span> {{ App\Enums\RoomStatus::getDescription($room->status) }}</li>
-                                    <li>{!! implode('<br>', $borrower_status) !!}</li>
-                                </ul>
-                                <!-- Button trigger modal -->
-                                <p class="pt-1"><a href="javascript:void(0)" id="buttonBorrowRoomModal" class="btn-custom px-3 py-2" data-toggle="modal" data-target="#borrowRoomModal" data-room-id="{{ $room->id }}" data-room-name="{{ $room->name }}">Pinjam Ruang Ini <span class="icon-long-arrow-right"></span></a></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                @endfor
-    		</div>
 			</div>
 		</section>
 
@@ -288,7 +234,7 @@
 					<div class="col-md-9 text-center">
 						<h2>Siap untuk memulai</h2>
 						<p class="mb-4">Mudah dan cepat pinjam ruangan secara online! Pinjam ruangan dalam satu klik atau kirim pertanyaan anda kepada kami.</p>
-						<p class="mb-0"><a href="#" class="btn btn-primary px-4 py-3">Pinjam sekarang</a> <a href="mailto:ft@unsoed.ac.id" class="btn btn-white px-4 py-3">Kontak kami</a></p>
+						<p class="mb-0"><a href="#" class="btn btn-success px-4 py-3">Pinjam sekarang</a> <a href="mailto:ft@unsoed.ac.id" class="btn btn-white px-4 py-3">Kontak kami</a></p>
 					</div>
 				</div>
 			</div>
@@ -380,7 +326,7 @@
             </div>
             <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-            <input type="submit" value="Pinjam Ruang Sekarang" class="btn btn-primary">
+            <input type="submit" value="Pinjam Ruang Sekarang" class="btn btn-success">
             </form>
             </div>
         </div>

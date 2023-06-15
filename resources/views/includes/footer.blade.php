@@ -9,11 +9,11 @@
             <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
                 <h2 class="footer-heading">Layanan</h2>
                 <ul class="list-unstyled">
-                    <li><a href="https://registrasi.unsoed.ac.id/" target="_blank" class="py-1 d-block">Pendaftaran</a></li>
-                    <li><a href="https://sia.akademik.unsoed.ac.id/" target="_blank" class="py-1 d-block">Sistem Informasi Akademik</a></li>
-                    <li><a href="http://ft.unsoed.ac.id/?ac_gallery=perpus-1" target="_blank" class="py-1 d-block">Perpustakaan</a></li>
-                    <li><a href="http://ft.unsoed.ac.id/category/jurnal/" target="_blank" class="py-1 d-block">Jurnal</a></li>
-                </ul>            
+      <li><a href="https://registrasi.unsoed.ac.id/" target="_blank" class="py-1 d-block">Pendaftaran</a></li>
+      <li><a href="https://sia.akademik.unsoed.ac.id/" target="_blank" class="py-1 d-block">Sistem Informasi Akademik</a></li>
+      <li><a href="http://ft.unsoed.ac.id/?ac_gallery=perpus-1" target="_blank" class="py-1 d-block">Perpustakaan</a></li>
+      <li><a href="http://ft.unsoed.ac.id/category/jurnal/" target="_blank" class="py-1 d-block">Jurnal</a></li>
+    </ul>
             </div>
             <div class="col-md-6 col-lg-3 mb-md-0 mb-4">
                 <h2 class="footer-heading">Tag</h2>
@@ -61,6 +61,8 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
     </div>
 </footer>
+
+
 
 <!-- loader -->
 <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
