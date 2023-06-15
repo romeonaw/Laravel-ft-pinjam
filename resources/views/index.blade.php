@@ -148,7 +148,7 @@
           <div class="row ftco-animate">
             <div class="col-md-12 wrap-about">
                 <div class="text-center">
-                    <img src="{{ asset('vendor/vonso/FlowchartV1.png') }}" class="img-fluid" alt="...">
+                    <img src="{{ asset('vendor/vonso/Tatacarapeminjaman.png') }}" class="img-fluid" alt="...">
                   </div>
                </div>
           </div>
