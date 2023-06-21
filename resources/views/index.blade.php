@@ -193,7 +193,7 @@
               </div>
               <div class="item">
                 <div class="testimony-wrap d-flex">
-                  <div class="user-img" style="background-image: url(vendor/technext/vacation-rental/images/person_2.jpg)">
+                  <div class="user-img" style="background-image: url(vendor/technext/vacation-rental/images/person_2.jpeg)">
                   </div>
                   <div class="text pl-4">
                   	<span class="quote d-flex align-items-center justify-content-center">
@@ -215,7 +215,7 @@
                       <i class="fa fa-quote-left"></i>
                     </span>
                     <p>Ruangannya bersih sangat cuy</p>
-                    <p class="name">Ady Septian Nugorho</p>
+                    <p class="name">Ady Septian Nugraha</p>
                     <span class="position">Mahasiswa Informatika</span>
                   </div>
                 </div>

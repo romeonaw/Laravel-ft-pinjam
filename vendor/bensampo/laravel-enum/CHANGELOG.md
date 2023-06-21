@@ -5,7 +5,36 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased](https://github.com/BenSampo/laravel-enum/compare/v3.4.2...master)
+## [Unreleased](https://github.com/BenSampo/laravel-enum/compare/v4.1.0...master)
+
+### Fixed
+
+- Fix return type on FlaggedEnum flags method #241 [241](https://github.com/BenSampo/laravel-enum/pull/241)
+- Suppress deprecated notice on PHP8.1 [236](https://github.com/BenSampo/laravel-enum/pull/236)
+
+## [4.1.0](https://github.com/BenSampo/laravel-enum/compare/v4.0.0...v4.1.0) - 2021-11-16
+
+### Added
+
+- Allow package to be installed with PHP 8.1 [#233](https://github.com/BenSampo/laravel-enum/pull/233)
+
+### Changed
+
+- Allow `laminas/laminas-code:^4.0` as a dependency [#233](https://github.com/BenSampo/laravel-enum/pull/233)
+
+## [4.0.0](https://github.com/BenSampo/laravel-enum/compare/v3.4.2...v4.0.0) - 2021-11-09
+
+### Fixed
+
+- Fixed validation error message localization when using string validation rules [#227](https://github.com/BenSampo/laravel-enum/pull/227)
+
+### Changed
+
+- Extend the functionality of the `getKeys()` and `getValues()` methods [#223](https://github.com/BenSampo/laravel-enum/pull/223)
+
+### Added
+
+- Added new method `notIn()` to check whether a value is not in an iterable set of values [#232](https://github.com/BenSampo/laravel-enum/pull/232)
 
 ## [3.4.2](https://github.com/BenSampo/laravel-enum/compare/v3.4.1...v3.4.2) - 2021-09-09
 
