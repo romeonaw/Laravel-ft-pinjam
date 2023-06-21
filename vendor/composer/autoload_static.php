@@ -327,8 +327,8 @@ class ComposerStaticInitce172c9648487a524e57c21b76196fcc
         ),
         'Psr\\Http\\Message\\' => 
         array (
-            0 => __DIR__ . '/..' . '/psr/http-message/src',
-            1 => __DIR__ . '/..' . '/psr/http-factory/src',
+            0 => __DIR__ . '/..' . '/psr/http-factory/src',
+            1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
         'Psr\\Http\\Client\\' => 
         array (
@@ -502,9 +502,16 @@ class ComposerStaticInitce172c9648487a524e57c21b76196fcc
     );
 
     public static $classMap = array (
+        'App\\Admin\\Controllers\\AuthController' => __DIR__ . '/../..' . '/app/Admin/Controllers/AuthController.php',
+        'App\\Admin\\Controllers\\BorrowRoomController' => __DIR__ . '/../..' . '/app/Admin/Controllers/BorrowRoomController.php',
+        'App\\Admin\\Controllers\\ExampleController' => __DIR__ . '/../..' . '/app/Admin/Controllers/ExampleController.php',
+        'App\\Admin\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Admin/Controllers/HomeController.php',
+        'App\\Admin\\Controllers\\RoomController' => __DIR__ . '/../..' . '/app/Admin/Controllers/RoomController.php',
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
+        'App\\Http\\Controllers\\API\\V1\\BorrowRoomApiController' => __DIR__ . '/../..' . '/app/Http/Controllers/API/V1/BorrowRoomApiController.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
+        'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
@@ -514,6 +521,10 @@ class ComposerStaticInitce172c9648487a524e57c21b76196fcc
         'App\\Http\\Middleware\\TrustHosts' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustHosts.php',
         'App\\Http\\Middleware\\TrustProxies' => __DIR__ . '/../..' . '/app/Http/Middleware/TrustProxies.php',
         'App\\Http\\Middleware\\VerifyCsrfToken' => __DIR__ . '/../..' . '/app/Http/Middleware/VerifyCsrfToken.php',
+        'App\\Models\\AdminUserDetail' => __DIR__ . '/../..' . '/app/Models/AdminUserDetail.php',
+        'App\\Models\\BorrowRoom' => __DIR__ . '/../..' . '/app/Models/BorrowRoom.php',
+        'App\\Models\\Room' => __DIR__ . '/../..' . '/app/Models/Room.php',
+        'App\\Models\\RoomType' => __DIR__ . '/../..' . '/app/Models/RoomType.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\Providers\\AuthServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AuthServiceProvider.php',
@@ -633,7 +644,16 @@ class ComposerStaticInitce172c9648487a524e57c21b76196fcc
         'Cron\\MinutesField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MinutesField.php',
         'Cron\\MonthField' => __DIR__ . '/..' . '/dragonmantank/cron-expression/src/Cron/MonthField.php',
         'Database\\Factories\\UserFactory' => __DIR__ . '/../..' . '/database/factories/UserFactory.php',
+        'Database\\Seeders\\AdminMenuTableSeeder' => __DIR__ . '/../..' . '/database/seeders/AdminMenuTableSeeder.php',
+        'Database\\Seeders\\AdminPermissionsTableSeeder' => __DIR__ . '/../..' . '/database/seeders/AdminPermissionsTableSeeder.php',
+        'Database\\Seeders\\AdminRoleMenuTableSeeder' => __DIR__ . '/../..' . '/database/seeders/AdminRoleMenuTableSeeder.php',
+        'Database\\Seeders\\AdminRolePermissionsTableSeeder' => __DIR__ . '/../..' . '/database/seeders/AdminRolePermissionsTableSeeder.php',
+        'Database\\Seeders\\AdminRoleUsersTableSeeder' => __DIR__ . '/../..' . '/database/seeders/AdminRoleUsersTableSeeder.php',
+        'Database\\Seeders\\AdminRolesTableSeeder' => __DIR__ . '/../..' . '/database/seeders/AdminRolesTableSeeder.php',
+        'Database\\Seeders\\AdminUsersTableSeeder' => __DIR__ . '/../..' . '/database/seeders/AdminUsersTableSeeder.php',
         'Database\\Seeders\\DatabaseSeeder' => __DIR__ . '/../..' . '/database/seeders/DatabaseSeeder.php',
+        'Database\\Seeders\\RoomTypesTableSeeder' => __DIR__ . '/../..' . '/database/seeders/RoomTypesTableSeeder.php',
+        'Database\\Seeders\\RoomsTableSeeder' => __DIR__ . '/../..' . '/database/seeders/RoomsTableSeeder.php',
         'DeepCopy\\DeepCopy' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/DeepCopy.php',
         'DeepCopy\\Exception\\CloneException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/CloneException.php',
         'DeepCopy\\Exception\\PropertyException' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/Exception/PropertyException.php',
